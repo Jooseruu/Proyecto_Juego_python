@@ -1,40 +1,45 @@
-import random
+
 
 # Creamos una lista de personajes famosos
 Characters = [
-    {"name": "Michael Jackson", "age": 50, "height": 175, "gender": "Male", "accessories": "none" "hair_color": "black"},
-    {"name": "Albert Einstein", "age": 76, "height": 160, "gender": "Male", "accessories": "glasses" "hair_color": "white"},
-    {"name": "Nicki Nicole", "age": 22, "height": 145, "gender": "Female", "accessories": "hat" "hair_color": "black"},
-    {"name": "Princesa Diana", "age": 36, "height": 170, "gender": "Female", "accessories": "earrings"  "hair_color": "blond"},
-    {"name": "Steve Jobs", "age": 56, "height": 168, "gender": "Male", "accessories": "glasses" "hair_color": "black"}
-    {"name": "Cristiano Ronaldo", "age": 37, "height": 187, "gender": "Male", "accessories": "none" "hair_color": "black"},
-    {"name": "Bad Bunny", "age": 28, "height": 180, "gender": "Male", "accessories": "earrings" "hair_color": "black"},
-    {"name": "Ronnie Coleman", "age": 58, "height": 180, "gender": "Male", "accessories": "none", "hair_color": "bald"},
-    {"name": "Reina Letizia", "age": 50, "height": 170, "gender": "Female", "accessories": "hat", "hair_color": "brown"},
-    {"name": "Aitana", "age": 23, "height": 160, "gender": "Female", "accessories": "earrings", "hair_color": "black"}
-    {"name": "Dwayne Douglas Johnson", "age": 50, "height": 196, "gender": "Male", "accessories": "none", "hair_color": "bald"},
-    {"name": "Vin Diesel", "age": 55, "height": 182, "gender": "Male", "accessories": "none", "hair_color": "bald"},
-    {"name": "Lionel Messi", "age": 35, "height": 169, "gender": "Male", "accessories": "none", "hair_color": "black"},
-    {"name": "Leonardo DiCaprio", "age": 48, "height": 183, "gender": "Male", "accessories": "none", "hair_color": "blond"},
-    {"name": "Shakira", "age": 45, "height": 157, "gender": "Female", "accessories": "earrings", "hair_color": "blond"}
+    ["Michael Jackson",  50, 175, "Male", "none", "black"],
+    ["Albert Einstein", 76, 160, "Male", "glasses", "white"],
+    ["Nicki Nicole", 22, 145, "Female", "hat", "black"],
+    ["Princesa Diana", 36, 170, "Female", "earrings", "blond"],
+    ["Steve Jobs", 56, 168, "Male", "glasses", "black"],
+    ["Cristiano Ronaldo", 37, 187, "Male", "none", "black"],
+    ["Bad Bunny",  28, 180, "Male", "earrings", "black"],
+    ["Ronnie Coleman", 58, 180, "Male", "none", "bald"],
+    ["Reina Letizia", 50, 170, "Female", "hat", "brown"],
+    ["Aitana", 23, 160, "Female","earrings", "black"]
+    ["Dwayne Douglas Johnson", 50, 196, "Male", "none", "bald"],
+    ["Vin Diesel", 55, 182, "Male", "none", "bald"],
+    ["Lionel Messi",  35, 169, "Male", "none",  "black"],
+    ["Leonardo DiCaprio", 48, 183, "Male", "none", "blond"],
+    ["Shakira", 45, 157, "Female", "earrings", "blond"]
 ]
-
 
 
 Personajes = [
-    {"nombre": "Michael Jackson", "edad": 50, "altura": 175, "genero": "Hombre", "accesorios": "no" "color_de_pelo": "negro"},
-    {"nombre": "Albert Einstein", "edad": 76, "altura": 160, "genero": "Hombre", "accesorios": "gafas" "color_de_pelo": "blanco"},
-    {"nombre": "Nicki Nicole", "edad": 22, "altura": 145, "genero": "Mujer", "accesorios": "sombrero/gorro" "color_de_pelo": "negro"},
-    {"nombre": "Princesa Diana", "edad": 36, "altura": 170, "genero": "Mujer", "accesorios": "pendientes"  "color_de_pelo": "rubio"},
-    {"nombre": "Steve Jobs", "edad": 56, "altura": 168, "genero": "Hombre", "accesorios": "gafas" "color_de_pelo": "negro"}
-    {"nombre": "Cristiano Ronaldo", "edad": 37, "altura": 187, "genero": "Hombre", "accesorios": "no" "color_de_pelo": "negro"},
-    {"nombre": "Bad Bunny", "edad": 28, "altura": 180, "genero": "Hombre", "accesorios": "pendientes" "color_de_pelo": "negro"},
-    {"nombre": "Ronnie Coleman", "edad": 58, "altura": 180, "genero": "Hombre", "accesorios": "pendientes", "color_de_pelo": "calvo"},
-    {"nombre": "Reina Letizia", "edad": 50, "altura": 170, "genero": "Mujer", "accesorios": "pendientes", "color_de_pelo": "marron"},
-    {"nombre": "Aitana", "edad": 23, "altura": 160, "genero": "Mujer", "accesorios": "pendientes", "color_de_pelo": "negro"}
-    {"nombre": "Dwayne Douglas Johnson", "edad": 50, "altura": 196, "genero": "Hombre", "accesorios": "no", "color_de_pelo": "calvo"},
-    {"nombre": "Vin Diesel", "edad": 55, "altura": 182, "genero": "Hombre", "accesorios": "no", "color_de_pelo": "calvo"},
-    {"nombre": "Lionel Messi", "edad": 35, "altura": 169, "genero": "Hombre", "accesorios": "no", "color_de_pelo": "negro"},
-    {"nombre": "Leonardo DiCaprio", "edad": 48, "altura": 183, "genero": "Hombre", "accesorios": "no", "color_de_pelo": "rubio"},
-    {"nombre": "Shakira", "edad": 45, "altura": 157, "genero": "Mujer", "accesorios": "pendientes", "color_de_pelo": "rubio"}
+    ["Michael Jackson",  50, 175, "Hombre", "no", "negro"],
+    ["Albert Einstein", 76, 160, "Hombre", "gafas", "blaco"],
+    ["Nicki Nicole", 22, 145, "Mujer", "sombrero/gorro", "negro"],
+    ["Princesa Diana", 36, 170, "Mujer", "pendientes", "rubio"],
+    ["Steve Jobs", 56, 168, "Hombre", "gafas", "negro"],
+    ["Cristiano Ronaldo", 37, 187, "Hombre", "no", "negro"],
+    ["Bad Bunny",  28, 180, "Hombre", "pendientes", "negro"],
+    ["Ronnie Coleman", 58, 180, "Hombre", "no", "calvo"],
+    ["Reina Letizia", 50, 170, "Mujer", "sombrero/gorro", "castaño"],
+    ["Aitana", 23, 160, "Mujer","pendientes", "negro"]
+    ["Dwayne Douglas Johnson", 50, 196, "Hombre", "no", "calvo"],
+    ["Vin Diesel", 55, 182, "Hombre", "no", "calvo"],
+    ["Lionel Messi",  35, 169, "Hombre", "no",  "negro"],
+    ["Leonardo DiCaprio", 48, 183, "Hombre", "no", "rubio"],
+    ["Shakira", 45, 157, "Mujer", "pendientes", "rubio"]
 ]
+
+
+
+
+
+
