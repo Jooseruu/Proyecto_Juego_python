@@ -37,4 +37,17 @@ print("La edad es:", edad)
 print("La altura en cm es:", altura)
 print("Es:", genero)
 print("Usa algun accesorio:", accesorios)
-print("Su pelo es:", nombre)
+print("Su pelo es:", Colordepelo)
+
+adivina_edad= input("¿Que edad piensas que tiene?")
+if adivina_edad==edad:
+    print("Sí, correcto!")
+else:
+    print("No, no tiene esa edad")
+
+adivina= input("¿Quien piensas que es? ")
+adivina= adivina.title()
+if adivina==nombre:
+    print("Felicidades has acertado!!!")
+else:
+    print("Más suerte la próxima, se trataba de:" + nombre)
