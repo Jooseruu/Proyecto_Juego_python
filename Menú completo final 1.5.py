@@ -1,6 +1,6 @@
 def menu():
 
-    def idioma():
+    def idioma():      #definimos el menu de seleccion de idioma como una funcion y lo decoramos
         print("************************************************")
         print("*     Bienvenido al juego ¿Quién es Quién?     *")
         print("*            Selecciona el idioma              *")
@@ -9,10 +9,10 @@ def menu():
         print("*                                              *")
         print("*  Para jugar en inglés (English) introduce 2  *")
         print("************************************************")
-        idiomasele= input("Selecciona el idioma en el que quieres jugar: ")
-        return idiomasele
+        idiomasele= input("Selecciona el idioma en el que quieres jugar: ")  
+        return idiomasele  #la funcion retornará el idioma que eliga el usuario
 
-    while True:
+    while True:   #creamos un bucle para mostrar un menú u otro
         idiomasele=idioma()
         if idiomasele=="1":
             print(" ")
@@ -84,13 +84,13 @@ def menu():
                     elif option == "3": #si elige 3 se saldrá del programa.
                         print("You have exited the program.")
                         break
-                    else:
+                    else:  #si pone un caracter no valido le avisará
                         print("Invalid option. Please select a valid option.")
                         print(" ")
             eng()
             break
 
-        else:
+        else:    #si no pone una opcion valida avisará
             print(" ")
             print("No has introducido una opción válida, vuelve a intentarlo...")
 
