@@ -44,7 +44,7 @@ def menu():
             print("You have chosen to play in English")
             def eng():
                 def menuprincipaleng():
-                        print("Welcome to the game Who's Who?")
+                        print("Welcome to the game Guess Who?")
                         print("Enter 1 to play")
                         print("Enter 2 to see instructions")
                         print("Enter 3 to exit the game")
