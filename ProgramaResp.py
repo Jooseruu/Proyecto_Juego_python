@@ -91,14 +91,16 @@ while True:
     durante_tiempo = final_tiempo - comienzo_tiempo
     print("Felicidades has acertado!!!")
     time.sleep(2)
+    print(" ")
     print("El número de intentos extras realizado para adivinar el personaje ha sido de",Número_intentos)
     print("Tiempo de juego: {:.2f} segundos.".format(durante_tiempo))
     break
  else:
     Número_intentos += 1
-    Resultado= input("No!!!,¿Desea volver a intentarlo, seguirá siendo el mismo personaje?(s/n)")
+    Resultado= input("No!!!,¿Desea volver a intentarlo? seguirá siendo el mismo personaje(s/n)  ")
     if Resultado =="n":
-     print("Más suerte la próxima, se trataba de:" + nombre)
+     print(" ")
+     print("Más suerte la próxima, se trataba de: " + nombre)
      final_tiempo = time.perf_counter()
      durante_tiempo = final_tiempo - comienzo_tiempo
      time.sleep(2)
