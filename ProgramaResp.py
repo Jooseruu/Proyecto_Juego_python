@@ -90,6 +90,8 @@ while True:
     final_tiempo = time.perf_counter()
     durante_tiempo = final_tiempo - comienzo_tiempo
     print("Felicidades has acertado!!!")
+    time.sleep(2)
+    print("El número de intentos extras realizado para adivinar el personaje ha sido de",Número_intentos)
     print("Tiempo de juego: {:.2f} segundos.".format(durante_tiempo))
     break
  else:
@@ -100,6 +102,6 @@ while True:
      final_tiempo = time.perf_counter()
      durante_tiempo = final_tiempo - comienzo_tiempo
      time.sleep(2)
-     print("El número de intentos realizado para adivinar el personaje ha sido de",Número_intentos)
+     print("El número de intentos realizado ha sido de",Número_intentos)
      print("Tiempo de juego: {:.2f} segundos.".format(durante_tiempo))
      break
