@@ -39,11 +39,45 @@ print("Es:", genero)
 print("Usa algun accesorio:", accesorios)
 print("Su pelo es:", Colordepelo)
 
-adivina_edad= input("¿Que edad piensas que tiene?")
+adivina_edad=int(input("¿Que edad piensas que tiene?"))
 if adivina_edad==edad:
     print("Sí, correcto!")
 else:
-    print("No, no tiene esa edad")
+    if edad<adivina_edad:
+        print("Ala!, no es tan viejo mi personaje")
+    else:
+        print("Es de una edad mas avanzada que la que me has propuesto")
+
+adivina_altura= int(input("¿Que altura tiene en cm?"))
+if adivina_altura==altura:
+    print("Sí, correcto!")
+else:
+    if altura<adivina_altura:
+        print("Es mas bajito el personaje escogido por mi ;)")
+
+    else: 
+        print("Es más alto mi personaje")
+
+adivina_genero= input("¿Que genero es?")
+adivina_genero= adivina_genero.title()
+if adivina_genero==genero:
+    print("Claro que sí!", nombre_jugador)
+else:
+    print("No, es", genero)
+
+adivina_accesorios= input("¿Que accesorios tiene si es que los tiene?")
+adivina_accesorios=adivina_accesorios.lower()
+if adivina_accesorios==accesorios:
+    print("Sí, correcto como siempre!")
+else:
+    print("No, te has equivocado", nombre_jugador)
+
+adivina_Colordepelo= input("¿Que Color de pelo tiene?")
+adivina_Colordepelo=adivina_Colordepelo.lower()
+if adivina_Colordepelo==Colordepelo:
+    print("Sí, correctísimo!")
+else:
+    print("No, te has equivocado, más suerte la proxima", nombre_jugador)
 
 adivina= input("¿Quien piensas que es? ")
 adivina= adivina.title()
