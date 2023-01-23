@@ -12,7 +12,7 @@ Characters = [
     ["Ronnie Coleman", 58, 180, "Male", "none", "bald"],
     ["Reina Letizia", 50, 170, "Female", "hat", "brown"],
     ["Aitana", 23, 160, "Female","earrings", "black"],
-    ["Dwayne Douglas Johnson", 50, 196, "Male", "none", "bald"],
+    ["Dwayne Johnson", 50, 196, "Male", "none", "bald"],
     ["Vin Diesel", 55, 182, "Male", "none", "bald"],
     ["Lionel Messi",  35, 169, "Male", "none",  "black"],
     ["Leonardo DiCaprio", 48, 183, "Male", "none", "blond"],
