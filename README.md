@@ -53,7 +53,7 @@ Hay una función que te imprime un menú, tendrás que escoger entre el inglés 
 Hemos dividido el juego en 3 partes:
 1-Menú
  1.1-Interfaz: Se define como menú esto es más lo visual(nos permite escoger idioma)
-     ~~~
+ ~~~
     def menu():
 
     def idioma():      #definimos el menu de seleccion de idioma como una funcion y lo decoramos
@@ -87,11 +87,11 @@ Hemos dividido el juego en 3 partes:
                     print("*******************************************")
                     opcion = input("Seleccione una opción: ")
                     return opcion   #la función devuelve el valor de la opcion que de el usuario
-     ~~~
+~~~
 
 2-Personajes: Funciona mediante posiciones, es necesario para jugar
-     ~~~
-     Personajes = [["Michael Jackson",  50, 175, "Hombre", "no", "negro"], #Nuestra lista de personajes
+~~~
+Personajes = [["Michael Jackson",  50, 175, "Hombre", "no", "negro"], #Nuestra lista de personajes
                                     ["Albert Einstein", 76, 160, "Hombre", "gafas", "blanco"],
                                     ["Nicki Nicole", 22, 145, "Mujer", "sombrero/gorro", "negro"],
                                     ["Princesa Diana", 36, 170, "Mujer", "pendientes", "rubio"],
@@ -106,11 +106,11 @@ Hemos dividido el juego en 3 partes:
                                     ["Lionel Messi",  35, 169, "Hombre", "no",  "negro"],
                                     ["Leonardo DiCaprio", 48, 183, "Hombre", "no", "rubio"],
                                     ["Shakira", 45, 157, "Mujer", "pendientes", "rubio"]]
-     ~~~
+~~~
 
 3-Juego 
 3.1-Estructura: Funciona en gran parte mediante estructuras "if"
-     ~~~
+~~~
      if adivina_altura==altura:
                                 print("Sí, correcto!")
                             else:
@@ -119,13 +119,13 @@ Hemos dividido el juego en 3 partes:
 
                                 else: 
                                     print("Es más alto mi personaje")
-     ~~~
+~~~
 3.2-Contadores y Timers: Usados para poder visualizar los intentos y el tiempo
-     ~~~
+~~~
      Número_intentos=0 #Creamos un contador de intentos y generamos el cronometro
      comienzo_tiempo = time.perf_counter()
      durante_tiempo = final_tiempo - comienzo_tiempo
-     ~~~
+~~~
      
 
 # Documento de test de errores
