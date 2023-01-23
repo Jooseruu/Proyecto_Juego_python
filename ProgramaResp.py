@@ -10,20 +10,20 @@ Personajes = [["Michael Jackson",  50, 175, "Hombre", "no", "negro"],
               ["Ronnie Coleman", 58, 180, "Hombre", "no", "calvo"],
               ["Reina Letizia", 50, 170, "Mujer", "sombrero/gorro", "castaño"],
               ["Aitana", 23, 160, "Mujer","pendientes", "negro"],
-              ["Dwayne Douglas Johnson", 50, 196, "Hombre", "no", "calvo"],
+              ["Dwayne Johnson", 50, 196, "Hombre", "no", "calvo"],
               ["Vin Diesel", 55, 182, "Hombre", "no", "calvo"],
               ["Lionel Messi",  35, 169, "Hombre", "no",  "negro"],
               ["Leonardo DiCaprio", 48, 183, "Hombre", "no", "rubio"],
               ["Shakira", 45, 157, "Mujer", "pendientes", "rubio"]]
 
 print("*******************************")
-print("|Cargando.....|")
+print("|Cargando........|")
 print("*******************************")
 
 time.sleep(3)
  
  
-nombre_jugador=input("¿Cual es tu nombre?" )
+nombre_jugador=input("¿Cuál es tu nombre? " )
 print("Comenzamos a jugar", nombre_jugador, ", buena suerte <3." )
 
 Personaje= random.choice(Personajes)
@@ -38,7 +38,7 @@ Número_intentos=0
 comienzo_tiempo = time.perf_counter()
 while True:
 
- adivina_edad=int(input("¿Que edad piensas que tiene?"))
+ adivina_edad=int(input("¿Qué edad piensas que tiene? "))
  time.sleep(2)
  if adivina_edad==edad:
     print("Sí, correcto!")
@@ -48,18 +48,18 @@ while True:
     else:
         print("Es de una edad mas avanzada que la que me has propuesto")
 
- adivina_altura= int(input("¿Que altura tiene mi personaje en cm?"))
+ adivina_altura= int(input("¿Qué altura tiene mi personaje en cm? "))
  time.sleep(2)
  if adivina_altura==altura:
     print("Sí, correcto!")
  else:
     if altura<adivina_altura:
-        print("Es mas bajito el personaje escogido por mi ;)")
+        print("Es más bajito el personaje escogido por mi ;)")
 
     else: 
         print("Es más alto mi personaje")
 
- adivina_genero= input("¿Que genero es?")
+ adivina_genero= input("¿Qué genero es? ")
  adivina_genero= adivina_genero.title()
  time.sleep(2)
  if adivina_genero==genero:
@@ -67,7 +67,7 @@ while True:
  else:
     print("No, es", genero)
 
- adivina_accesorios= input("¿Que accesorios tiene si es que los tiene?")
+ adivina_accesorios= input("¿Que accesorios tiene si es que los tiene? ")
  adivina_accesorios=adivina_accesorios.lower()
  time.sleep(2)
  if adivina_accesorios==accesorios:
@@ -75,7 +75,7 @@ while True:
  else:
     print("No, te has equivocado", nombre_jugador)
 
- adivina_Colordepelo= input("¿Que Color de pelo tiene?")
+ adivina_Colordepelo= input("¿Qué Color de pelo tiene? ")
  adivina_Colordepelo=adivina_Colordepelo.lower()
  time.sleep(2)
  if adivina_Colordepelo==Colordepelo:
@@ -83,11 +83,15 @@ while True:
  else:
     print("No, te has equivocado, más suerte la proxima", nombre_jugador)
 
- adivina= input("¿Quien piensas que es? ")
+ adivina= input("¿Quién piensas que es? ")
  adivina= adivina.title()
  time.sleep(2)
  if adivina==nombre:
+    final_tiempo = time.perf_counter()
+    durante_tiempo = final_tiempo - comienzo_tiempo
     print("Felicidades has acertado!!!")
+    print("Tiempo de juego: {:.2f} segundos.".format(durante_tiempo))
+    break
  else:
     Número_intentos += 1
     Resultado= input("No!!!,¿Desea volver a intentarlo, seguirá siendo el mismo personaje?(s/n)")
